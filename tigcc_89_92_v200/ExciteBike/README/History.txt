@@ -1,0 +1,387 @@
+==============
+HISTORY (2004)
+==============
+
+May 30 -
+* Updated the game to v0.64 and released the game publically (2nd time)
+
+May 28 -
+* Added Kevin Kofler's German Readme translation
+
+May 27 -
+* Fixed a bug in the new Link connection routine
+
+May 26 -
+* Fixed a glitch in external tracks where a bike wouldn't jump on the top jumps if it was 
+directly followed by a dry patch or a top blockade (reported by Levimak)
+
+May 25 -
+* Fixed a few strings which were too long in the German translation
+* Updated the game to v0.61
+
+May 24 -
+* Incorporated and checked over Kevin Kofler's German retranslation
+
+May 23 -
+* Integrated Mathiniste's German translation into the current source
+* Improved the routine to establish a Link connection.  From now on, both calcs do not 
+have to be running the Excitebike program when the first calc enters Multiplayer.  They 
+don't even have to be connected with a cable.  Several people have had trouble trying to 
+figure out why linkplay wouldn't work when entering Multiplayer on one calc before starting 
+the game on the other.
+* Modified the new linkplay routine to recognize and be compatible with the old link 
+connection routine
+* Updated the game to v0.60
+
+May 22 -
+* Began work on a new project, Sumo Wrestling!
+
+May 18 -
+* Fixed a rare graphics glitch in the Track Editor, where if you had the Background cheat 
+enabled, part of the background would be drawn and part of it would not when scrolling
+
+May 15 -
+* Uploaded the game (v0.55) to www.ticalc.org
+
+May 13 -
+* Added one string in French I forgot to include
+
+May 7 -
+* French translation is integrated into the updated source for easy maintenance/updating of 
+both the English and French versions
+* Updated game to v0.55
+
+May 2 -
+* Game and Readme are translated to French by 240-185
+
+May 1 -
+* Fixed a Linkplay glitch where the bike's vertical coordinate was not adjusted between the 
+two screen size types
+* Fixed the Linkplay Pause screen, which was broken after a few other fixes
+
+April 27 -
+* Fixed several small bugs and glitches
+
+April 25 -
+* Fixed a rare bug where a bike could get stuck Overheated
+* Added a Multiplayer mode where the first person to cross the Finish Line wins, as opposed 
+to the default mode where the person with the fastest overall time wins
+* Added a Background Texture cheat.  It is not part of the default game because it slows 
+the frame rate too much, but it does look pretty cool
+
+April 23 -
+* Updated to v0.53 and released the game at Ti-Gen for beta testing
+
+April 21 -
+* Fixed a bug with the Moon Gravity cheat which caused the calc to crash if you jumped 
+completely off of the Terrain screen
+
+April 17 -
+* Fixed a glitch where ESC wasn't recognized in the Get_Input routine
+* Added support for Kern0 ESC+ON breaks (and other types of unexpected errors)
+
+April 16 -
+* Minor size optimizations (53755 bytes as of now)
+* Fixed a minor Link Bug with the Pause Screen
+* Excitebike 68k v0.50 Public Beta Testing begins
+
+April 8 -
+* Added a visual countdown before the start of a race
+
+April 7 -
+* Added a few more cheats, and now a message is now shown, unlocking a random cheat after 
+every race that the user's time is less than 50 seconds on Track 5
+* Lightly encrypted the cheats
+
+April 6 -
+* Added support for Linkplay in the Post-race summary screen
+* Began implementing the original NES Excitebike GameShark Cheats
+
+April 4 -
+* Reformatted the external track structure to allow for easier loading/saving of best times
+
+March 31 -
+* Fixed several bugs with the track editor, as well as one with the saving of external track 
+best times
+
+March 29 -
+* Fixed a bug with the Saving of external track best times
+
+March 28 -
+* Added a screen which allows the user to browse through and clear Track Records
+* Added a flag, which is set when a bike passes over a blockade by tilting backwards, which 
+restricts the bike from tilting backwards again until the user releases the Left Key (or the 
+bike crashes/jumps/stops/etc)
+
+March 26 -
+* Fixed several things, mainly with the track record code
+* Minor updates to the program's Readme
+* Slowed down the bike's ability to accelerate
+
+March 21 -
+* Fixed a bug with the function DrawTerrain_Clipped8_OR_R which caused a crash on the 92+/
+v200 versions of the game.  Much thanks to Lionel Debroux
+
+March 20 -
+* Added complete support for saving/loading of Default and External Track Records
+
+March 19 -
+* Improved and fixed some newly added code in the Track Editor
+
+March 18 -
+* Fixed a bug with the clipped Terrain on the Ti-92+/v200 versions which caused the game to 
+crash every time, halfway through a track
+
+March 17 -
+* Improved the HUD support speed-wise
+* Fixed many bugs with the TI-92+/v200 versions
+
+March 15 -
+* Fixed several minor bugs
+* Greatly improved the Post_Race function to notify the user of their progress
+
+March 14 -
+* Moved the Default Compressed Levels back into the main Excitebike File
+* Added a standard for the Ranking system
+* Updated to TIGCC v0.95 Beta 6 which fixed the COMPRESSED_FORMAT_RELOCS support to cut 
+another ~1,300 bytes off of the program's size.  It also added support for the new TI-89 
+Titanium through a new type of launcher
+* Improved the (previously choppy) in-game Blinking Text
+
+March 8 -
+* Added a standard way to show Blinking Text (such as the Overheat and Lap Time Messages)
+
+March 7 -
+* Fixed a very old glitch where Computer bikes would pop up onto your screen out of nowhere 
+when near the end of a Track
+* Put the Global variables pointer (used extensively throughout the program) into a Register 
+for a size cut of ~3000 Bytes!
+
+March 6 -
+* Finished up the game's Readme
+
+March 5 -
+* Added and tested the loading of new externally compressed Default Tracks (1 through 5)
+* Fixed a few (rare) Glitches with the Bike Crashing code
+
+March 4 -
+* Created an external 'File Dropper' program to compress and save the Default Tracks 
+Externally
+
+March 3 -
+* Added full support for the Wheelie at the end of a Race
+* Greatly improved the RLE Compression/Decompression Ratio by adding another compression 
+check
+
+March 2 -
+* Started adding support for Tracks having Best Time Records
+
+February 29 -
+* Added the ability for Bikes to do flips with certain button combinations :)  This is the 
+only change in Gameplay from the original NES Excitebike because I would like to keep the 
+project as close as possible to the original
+* Started work on the game's Documentation
+* Wrestling season is over with so I will have Much more time to program.  I placed Sixth 
+in the State of Wisconsin in the 119 pound weight class this year!
+
+February 26 -
+* Converted the Post-Race graphics and added the Post-Race Summary Screen
+* Added a Pause Screen
+* Converted the Fifth and Final original NES Excitebike Track
+
+February 25 -
+* Worked on the Link functions.  Played the first successful two-player link race.  Working 
+on the linkplay for Excitebike only took about a half hour because most of the same 
+premises I just took from Ice Hockey 68k's Linkplay (which took me forever to work out!)
+* Mud hit detection glitch fixed
+
+February 24 -
+* Minor Glitch fixes
+* Major update/changes made to the Track Editor.  It is now a little less like the 
+original and a little more user-friendly.  Now the currently selected terrain blinks
+
+February 22 -
+* Started adding Multiplayer support
+
+February 20 -
+* Added the option of Scrolling Backwards in the Track Editor
+
+February 19 -
+* Fixed a few bugs with the Menu Changes
+* Fixed a glitch in the Monster Ramp Hit Detection
+
+February 18 -
+* Added Menu Functionality to accomodate for the possibility of more than Six External 
+Levels
+* Converted the Fourth original NES Excitebike Track
+
+February 15 -
+* Many small Optimizations/Fixes
+* Added dynamic Vertical Camera shifting -- Sounds fancy, doesn't it?  Now, when the 
+camera bike goes offscreen on a jump, the camera will follow it up
+* Converted the Second and Third original NES Excitebike Tracks
+
+February 14 -
+* Added a Scrolling Information Screen
+
+February 12 -
+* Converted the original (NES) Excitebike's first Track to Excitebike 68k's format
+
+February 11 -
+* Loading, Saving, Compression, and Decompression of External Tracks all now work 
+perfectly
+* Added the 'Monster Jump' and 'Monster Ramp' Terrains and corresponding Hit Detections.
+They're 3x larger and 10x more complicated than any of the other types of Terrain, 
+so they are Monsters :)
+* Fixed a few Errors in the Error Handling function
+
+February 10 -
+* Sped up the game (~8 fps) by changing the way the HUD is handled
+* Fixed the buggy RLE compression algorithm
+
+February 8 -
+* Added Compression/Decompression of External Tracks
+
+February 5 -
+* Fixed the buggy loading of External Tracks
+
+February 3 -
+* Added basic loading of External Tracks
+
+February 2 -
+* Fixed some minor bugs with the new Track Editor
+* Added saving of External Levels (No compression yet, though I will probably use 
+RLE)
+
+February 1 -
+* Added the majority of the Track Editor Code
+
+January 31 -
+* Started adding the different Game Modes
+* Various Size and Speed Optimizations
+
+January 29 -
+* Began implementing basic Menu support
+
+January 28 -
+* Several small bug/glitch fixes
+* Fixed the hit detection of the Slanted Jumps
+* Added a small TitleScreen
+
+January 25 -
+* Added Bike Overheating
+* Started adding support for different BackGround Colors
+* Bikes can now make each other crash by colliding their back wheel with another 
+bike's front wheel
+
+January 18 -
+* Optimized ScrollLib.c and the Double Buffering for a speed gain and size cut
+
+January 13 -
+* Computer Bikes will now 'loop' around the Camera Bike - They will not race around 
+the full track, they sort of teleport in one direction or another when offscreen, 
+so the user will always have Computer Bikes around
+
+January 11 -
+* Added a HUD and started the Temperature/Overheating Code
+* Added TICT's Beta Fast String Drawing Routines
+
+January 9 -
+* Added a bit of Computer AI to dodge Mud and Blocks
+
+January 6 -
+* Fixed some small bugs
+
+January 4 - (Last day of Christmas Vacation)
+* A Bike will now slow down if its Tilt is not centered upon Landing
+* Started Integrating basic AI into the Game
+* Fixed a Huge Bug in the way the Bikes are stored.  Before this, only the first 
+Bike would work properly and memory was being overwritten for the others
+* Corrected a Glitch where Bikes would not be drawn in the right order, depending 
+on their 'depth' on the screen
+* Corrected a bug where Riders would vanish if they were not on the same Lap as 
+the Camera
+* Fixed a bug in both the Crashing and Jumping Initiations
+* Fixed a Glitch where a Bike's Graphic would get mixed up if the Bike was Jumping 
+and there was hazardous Terrain underneath it
+* Fixed a Glitch in the Crash Initiation, where a Bike could crash in the same 
+spot repeatedly and get stuck there
+
+January 3 -
+* Added the rest of the Crashing Code.  Before this, the bike would just 
+tumble, without throwing the rider off
+* Fixed a bug in the Jumping Physics
+* Optimized a few Routines
+
+January 2 -
+* Working on Perfecting Jumping Physics for each type of Jump
+* Figured out that the cosine and sine functions were returning the values in 
+Radians instead of Degrees.  Man, I'm stupid.  Now the Jumping works MUCH 
+Better.
+* Changed to using a small LookUp Table instead of using the sin and cos 
+functions (Much smaller and faster)
+* Converted some of the Miscellaneous Graphics
+
+==============
+HISTORY (2003)
+==============
+
+December 31 -
+* Began implementing Jumping into the Game
+* Added a Shadow under a Bike when it is in the Air
+
+December 30 -
+* Finally (after lots of trial and error) worked out a good Jumping algorithm 
+for the Bikes
+
+December 28 -
+* Fixed a glitch with the Crash Handling
+* Bikes can now Tilt Backwards and Forwards
+* Fixed a bug with the Hedges
+
+December 27 -
+* Started work on the Bike Jumping Physics
+
+December 26 -
+* Added/Perfected much of the Terrain Hit Detection
+* Bikes can now Crash and follow the path of the Terrain
+
+December 25 -
+* Merry Christmas :)
+* Added Automatic Key Compatibility Detection for the Calculator Type, taken 
+from my other game Ice Hockey 68k which I am also still working on.
+* The Bikes can now turn and Accelerate
+* Started implementing basic Terrain Hit Detection
+
+December 24 -
+* Fixed a bug in the CopyGrayScreens Routine
+* Started implementing the Bikes into the Game
+* Made a standard Format for the Bike structure
+* Corrected a bug where the Bike's coordinates would not be updated when the 
+Camera enters a new lap
+
+December 22 -
+* Converted the majority of the Bike Graphics
+
+December 21 - (Christmas Vacation -- Lots of free time!)
+* Optimized the way in which the Terrain Data is stored to save 5100 Bytes
+* Added Hedges
+* Integrated TI-92+/v200 Compatibility -- The larger screen size makes the 
+track really look nice
+* Finally decided on a nice Color Scheme for the Terrain (It was the 5th one 
+I tried and it takes about two hours to draw and convert each one)
+* Started converting the Bike Graphics
+
+December 16 -
+* Got the Scrolling working Correctly
+* Have not decided on a color scheme for the Terrain yet
+
+December 15 -
+* Fixed the GrayTile_Clipped8() Function
+* Still converting/testing which color scheme is best for the Terrain
+-- Time Consuming...
+
+December 14 -
+* Started the ExciteBike Project!
+* Decided on a Scrolling Engine to use
+* Converted all Terrain Graphics (the first time)

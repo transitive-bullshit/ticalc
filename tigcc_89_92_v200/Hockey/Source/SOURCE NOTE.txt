@@ -1,0 +1,3 @@
+Hockey v1.04 should be compiled with TIGCC v0.95 Beta 4 or higher.  It will not compile with previous versions.  I know for sure that it does not compile with TIGCC v0.95 Beta 3 or below.  The External Data is currently not used, as I only needed it when Hockey broke the 64kb limit (After many optimizations including TIGCC v0.95's new linker, I got the size back down under the limit).  However, Hockey remains very close to the size limit.
+
+-- Fisch

@@ -1,0 +1,52 @@
+AP Statistics Help/Review:
+---------------------------------
+June 26th, 2004
+By Travis Fischer (Fisch2)
+phishfud@elknet.net
+
+
+This program is fairly self-explanatory and should be used for review purposes only.  It should work on all 
+68k calcs (untested on the TI-89 Titanium, but it should work).  This program is nostub, so no 
+kernels/libraries are needed to run it.  Much thanks to the TIGCC team for their excellent compiler/IDE!  
+Also thanks to the TICT team!
+
+Use the Left/Right keys to scroll through the 22 pages of formulas/information, covering pretty much all of 
+the AP Statistics course materials (except some of the probability stuff).  Enter may be used in place of 
+the Right key to scroll forward through the pages.  In the lower right hand corner, there is a counter 
+showing you your current page.  This is Not an e-book.
+
+This program was created very quickly and was originally intended for a different reason, but I thought 
+someone else may benefit from this program.  Although this program is very simple/small, if there is some 
+bug with it, I am in no way responsible for any loss of data and/or Anything which may negatively occur as 
+a result of using this program.
+
+If you are taking the AP Statistics Exam, you probably should know the formulas contained in this program 
+and definitely !!!know when to use each of them!!!.  For the free response section of the exam, several of 
+the questions usually involve performing a test (the cumulative question #6 usually incorporates several 
+tests/operations).  Be sure to either state the name of the test you are performing or the test's formula 
+and, if you have time, both.  Some people advise answering question #6 first since it is weighted and 
+worth more points.  Anyway, I hope this program compacts everything in an easy-to-use review tool and I 
+wish you good luck with the Exam :-)
+
+(taken from the help.c)
+REVIEW for AP-Statistics Exam:
+         -- Disclaimer --
+   This program is strictly for 
+   review purposes and was not 
+   written for people to cheat 
+   with.  I hereby state that I 
+   can be in now way held 
+   responsible for your actions.
+   It is NOT this author's 
+   intent to write a 'cheat-
+   sheet' prog, so please don't 
+   use it as one!  And, as 
+   usual, I am in no way liable 
+   for what happens.  The author 
+   expresses NO guarantees or 
+   warranties of the software 
+   and/or the data files, either 
+   expressed or implied.
+         -- Disclaimer --
+   
+   By:  Me :)

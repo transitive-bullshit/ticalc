@@ -1,0 +1,8 @@
+* March 06, 2004 - I started this project a LONG time ago, when I first began programming.
+Today, I thought it would be fun to add a few touches and optimize the program a bit so I 
+could release it soon.  I know that this program is not written in an optimized way, but I
+think it is pretty good for being one of the first games that I ever made in C.
+
+The 'Price is Right' rules!  If you like this game, then you'll definitely like my other 
+games:  Ice Hockey 68k, Strategery, and Excitebike 68k!  Check them out at www.ticalc.org 
+or email me at phishfud@elknet.net

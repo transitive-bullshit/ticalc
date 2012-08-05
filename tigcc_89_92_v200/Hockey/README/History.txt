@@ -1,0 +1,433 @@
+HISTORY (2005)
+---------------
+
+December 30 -
+* Fixed the following bug reported by Kevin Kofler by making the hidden gray planes one 
+line larger:  "if the selected computer team contains a "g", the game will misbehave (the 
+camera will jump like mad, the computer players will play stupidly and/or you'll not be 
+able to hit the puck, the calculator may also crash at some later point). This is because 
+the "g" is displayed in a way which overflows the plane (the last line is off-screen), 
+overwriting some variables"
+* Recompiled with the latest version of TIGCC (v0.95 Beta 6)
+* Updated the game to v2.75
+- Program Size: 54,983
+
+March 7 -
+* Removed OPTIMIZE_ROM_CALLS for a size/speed optimization
+- Program Size: 55,891
+
+February 16 -
+* Fixed a bug with the F3 Teacher Key detection on the v200
+* Updated the game to v2.71
+
+February 13 -
+* Switched to using F-Line ROM calls and performed various size optimizations to shave off 
+1714 bytes
+- Program Size: 56,013
+
+HISTORY (2004)
+---------------
+
+October 27 -
+* Updated the game to v2.70
+
+October 17 -
+* Slowed down the scrolling repeat rate in the Choose_Team menu
+
+October 16 -
+* Started another round of private beta testing of v2.55
+
+October 13 -
+* Fixed a glitch, and updated the program to v2.55
+
+September 3 -
+* Fixed a glitch with the small circles in the team selection screen
+* Tested and fixed a few bugs in the new link code
+* Began another period of private beta testing of v2.50
+
+August 30 -
+* Fixed a glitch in the Options Menu where the Team Editor option sometimes wouldn't appear
+
+August 29 -
+* Converted to using a new _KeyCheck system to shave off over 2,000 bytes!  (the new system 
+was originally developed for Sumo Wrestling and since, I have incorporated it into both 
+ExciteBike 68k and now Ice Hockey 68k)
+* Slightly Optimized the Link exiting code (~150 bytes)
+* Updated the code to establish a link connection to the routine I used for ExciteBike 
+68k (now one calc can enter the Multiplayer option before the other is running the Ice 
+Hockey program)
+* Returned the external graphics data back into the main file
+* Updated the program to v2.50
+
+August 17 -
+* Many !LARGE! optimizations have been made to Ice Hockey, reducing the uncompressed 
+size by over 12,000 bytes!  Much thanks to Lionel Debroux who contributed/suggested 
+all of them!  These include (may not be complete):
+* the addition of several compiler switches
+* not using builtin TIGCC double-buffering support
+* converting large arrays of strings into an optimized assembly format
+* updating to the latest ExtGraph beta and using Regparm versions of the routines
+* linkplay now exchanges about 1/3 the amount of data each frame
+
+July 22 -
+* Received confirmation that Ice Hockey 68k v2.00 works on the Ti-89 Titanium 
+from Dan Barr
+
+July 18 -
+* Recompiled Ice Hockey 68k with TIGCC v0.95 Beta 12, to add further 
+optimizations and, more importantly, Ti-89 Titanium compatibility
+
+January 1 -
+* Changed to using FS_DrawString to draw strings Fast, instead of 
+FS_DrawLittleString, which only supported F_4x6
+* Fixed a Glitch in the Puck-Goal Hit Detection, where the puck would go in 
+the net and score, but then be pushed up a few pixels so it would look like 
+it shouldn't have scored
+* Added an option to change the Game Speed
+* Added three cheats
+
+HISTORY (2003)
+---------------
+
+December 31 -
+* Added Fast String Drawing (Beta Routines written by TICT).  The Game now 
+runs SO FAST, that I can't even see the puck!
+
+December 12 -
+* Changed the menues to incorporate the Distortion effect in the background 
+instead of the Menu Selection Bars; They were too hard to read when the text 
+was swaying.
+* The external hockteam File will only be saved now if the User has made 
+changes
+* It took me about a month, but I finally figured out why the Flower and 
+LinkPlay Graphics crashed when they were loaded from the External File.  It 
+is because they are unsigned long arrays and they were being loaded from 
+an ODD memory Address in the File.  Once I made sure that their Address in 
+the hockgfx File was Even, it worked fine:)
+
+December 10 -
+* Added the Squiggly Title Screen and Menu Selection Bars!
+
+December 9 -
+* Refined yet more the Edit_Team() Function
+* Added automatic Alphabetizing of the Teams
+
+December 8 -
+* Several Optimizations and Bug fixes
+* Moved the Game's Graphics back to an external file
+* Refined the Edit_Team() Function
+
+December 7 -
+* Added complete support for external, modifiable Teams
+
+December 6 -
+* Fixed an insidious bug that threw random Address Errors upon exiting the 
+program
+* Uploaded Ice Hockey v1.02 Publically
+
+December 5 -
+* Hockey was featured at www.ticalc.org!
+
+December 2 -
+* Implemented a few size optimizations suggested by Digital
+* Optimized some more for size and imported all of the graphics back into 
+one file.  I have managed to fit Hockey under 64 kb!
+* Released Ice Hockey v0.62 Publically
+
+November 30 -
+* Fixed the Text bug on v200
+* Sped up the Game from (about) 14.392874 fps to 16.254181 fps. 
+(729 cycles in 0.42.15)
+
+November 29 -
+* Sped up the Game from (about) 13.302217 fps to 14.392874 fps.
+
+November 20 -
+* Now, when the Change_Plr key is tapped twice, control will go to the team's 
+goalie
+
+November 17 -
+* Small adjustments to the puck/goal hit detection
+
+November 13 -
+* Changed over to using a few of ExtGraph's v2.0 Optimized Sprite routines 
+for a size cut of around 114 Bytes
+* Several bug fixes
+
+November 12 -
+* Fixed several severe bugs that arose as a result of the restructuring after 
+moving the Graphics Data to an External File
+* Fixed a few bugs in my implementation of the vat.h functions
+
+November 11 -
+* Moved the majority of the Graphics Data to an External File because 
+Hockey has exceeded the 64kb Limit
+* Rewrote the Save_Config and Load_Config Functions to incorporate 
+vat.h functions, instead of stdio.h functions to optimize the Program's 
+size a few hundred Bytes
+
+November 10 -
+* Fixed a few Errors in the ERROR() Function, lol
+* Made the Redefine_Keys() Function more friendly
+
+November 9 -
+* Successfully RLE Vertically compressed the NHL 2004 TitleScreen 
+saving 432 Bytes, suggested by Lionel Debroux
+* Added the Two-Calc Linking Graphic
+* Released Beta 0.55 for testing
+
+November 8 -
+* Made changes to the Center_Camera() Function. The camera's 
+movement should never be choppy anymore.
+* Left and Right now scrolls through the Time Limits in the Options 
+Menu, as well as 2nd;  Suggested by Jordan Krage
+* Fixed a potentially serious bug, reported to me by Lionel Debroux, 
+where if an error was thrown or ESC+ON is pressed with Kerno installed, 
+the program would leak memory and fail to reinstall the original 
+interrupt handlers.
+
+November 7 -
+* Converted all key values to the new Reconfigurable format
+* Combined all of the allocations into one bulk malloc, saving around 
+700 Bytes, suggested by Lionel Debroux
+* Added a Redefine_Keys() Function, with the help of Malcolm Smith
+
+November 6 -
+* Fixed some more minor Link bugs
+* Fixed a new bugs that came from the addition of the Teacher Key
+* Dramatically increased the Multiplayer's Connection Rate.  This 
+was kind of buggy before, but now the calcs should connect every time.
+* Released Beta 0.54 for testing
+
+November 5 -
+* Added some Link checks and made parts of the Link Functions more 
+stable
+* Added a Teacher Key, for a fast exit out of anywhere in the game, 
+suggested by Jordan krage
+
+November 4 -
+* Fixed a few things pointed out by Digital Gear
+* Changed the HW1 ShootOut time to 6 seconds, instead of 10 seconds
+
+November 3 -
+* Fixed a bug where the game would once in a while end early and go 
+straight to a ShootOut
+* Fixed a bug reported to me by Kevin Kofler, where a randomly chosen 
+Computer Team could be the same as your team
+
+November 2 -
+* Changed the v200 Key Layout, suggested by Kevin Kofler
+* Added the Enter Key as a second Confirmation Key in all Menues, 
+suggested by Kevin Kofler
+
+October 31 -
+* Made lots of modifications, so the 89 and 92+ versions will be 
+compatabile to run on both calcs
+* Trick of Treating!
+
+October 30 -
+* Changed Shooting so Human's shots will not go at 45 degree angles all 
+the time now, depending on the plr's vertical speed when shooting
+* Fixed a glitch in the Average Plr's Graphics
+* Fixed a camera glitch on the Ti-92+/v200 version
+* First Public Beta Released on the TICT/TIGCC Message Board
+
+October 28 -
+* Took out the Alpha key to automatically swith control to the Goalie, 
+because there were just too many keys
+* Optimized
+
+October 27 -
+* Alpha on the Ti-89 and F6 on the Ti-92+/v200 will now change the current 
+player to your team's goalie on defense
+* Fixed a bug in the ERROR() Function, which could actually cause a crash
+
+October 26 -
+* Worked on Documentation
+* Started Preparing Hockey for Beta Testing
+* Improved Passing Algorithm
+* Optimized a few things
+* A Single Player Match against the Computer A.I. runs at around 14.5 fps
+
+October 25 -
+* Went through and made sure the code was well Commented
+* Added a message for the user after the game exits
+* Fixed Several Small Bugs
+* Converted the ReadMe file to basic HTML Format
+
+October 24 -
+* Host does not pick both teams anymore, each player picks their own team
+* Fixed a few rare Link bugs
+* When a computer player does not have the puck and is not close enough to 
+the player with the puck, they will skate back to their original position 
+in their team's formation to play defense now
+* Whenever one calc exits in a Waiting, Menu, or Choose Team screen, the 
+other calc is notified and exits also
+
+October 23 -
+* Played the first full Two-Player Hockey game with a friend
+* Fixed *hopefully* the last of the Link bugs
+* Fixed a potential Link bug where if one calc is in SHOOTOUT Mode and the 
+other is in EXHIBITION Mode, the calc's Modes will be set equal to the 
+Host's Mode
+* Both calcs exit now in Link Mode when the calcs are waiting and one Plr
+presses ESC
+* Added a Readme
+
+October 22 -
+* Still fixing Link bugs
+* In Multiplayer games, you don't have to choose between host and join 
+anymore.  Whoever Joins the game first will become the Host now
+* Fixed a bug where the Skinny Plrs light and dark data was not switched 
+when they were on team 2
+* Added In-Game Directions
+
+October 21 -
+* Got Link Functions working well!  There is still a lot of work to be done 
+on them, though.
+* Added a Pause Screen
+* Fixed lots of Link bugs
+
+October 20 -
+* Fixing and rewriting the Link Functions
+* Added a Synchronize_Calcs() Function because one calc was always going 
+slightly faster than the other, which caused big problems
+* When a Game/ShootOut ends, a Game Summary Screen is now shown
+
+October 19 -
+* Still working on perfecting the Link Functions
+
+October 17 -
+* Started work on the Link Functions
+
+October 16 -
+* Many small Bug Fixes
+* Players should Skate around the goals now, instead of trying to skate 
+through them and getting caught on an edge
+
+October 15 -
+* Added Sudden Death to the end of a ShootOut
+* Changed the A.I. precision shooting again.  With the old, the A.I. scored 
+on an average of 1/10 in a Shootout.  Now the Average is around 5-6/10!
+* Fixed a glitch where plrs can sometimes get stuck behind the goals
+
+October 14 -
+* Players now show a shooting animation right before shooting
+* Fixed a "Ghost Player" Glitch, where one player's mask would sometimes
+be drawn in the wrong spot and it would look like a phantom player
+* Began work on a ShootOut Mode
+
+October 13 -
+* Fixed a bad bug where the player's Graphics would sometimes get messed up
+* Improved Hit Detection with the Skinny Players
+
+October 12 -
+* Changed Player Graphics, started adding Skinny and Fat guys
+* Player Masks are now calculated when Players are drawn to save program space
+* Type of plr now makes a difference
+
+October 11 -
+* Added Most of the Tournament Mode
+
+October 10 -
+* Added Team "Styles"/Formations
+* Added Full Ti-92+/v200 Support!
+* Added an external Configuration File to save game settings
+* Moved Data from Hockey DLL to main program because the DLL was unnecessary
+
+October 9 -
+* Changed to using the FAT Engine's Fastsqrt Function for a significant 
+speed gain
+* Made it Much harder to score on the Computer off of bank shots
+
+October 8 -
+* Fixed some bugs where the puck went through the back of the goals sometimes
+* !Fixed a major bug in the Distance formula which made passing and changing
+players not work properly
+* Added Player names for all Eastern and Western Conference Names
+* Improved Passing
+* Added a Choose_Team() Function
+
+October 7 -
+* Made Goalies smarter, Harder to score Now
+* Added an Options Menu
+
+October 6 -
+* Fixed a glitch where players can get stuck behind the goals when they have the puck.  It can 
+still happen, but very rarely
+* Fixed a glitch in the Closest_Plr() Function
+* Added a timer
+
+October 5 -
+* Started adding external DLL support. As of right now, building DLL's with TIGCC v0.95 Beta 1
+is broken
+* Started a Menu System
+
+October 3 -
+* Added Precision shooting, Computer plrs try to shoot around the other team's Goalie
+
+October 1 -
+* Team 2 has different gfx than Team 1 (Switched light and dark grays)
+* Computer can now play itself
+* Still tweaking A.I.
+
+September 29 -
+* Worked on Computer A.I. and Player format
+* Two Players cannot have the puck at the same time anymore
+
+September 28 -
+* Added Hit Detection of the plrs with the Right and Left Goals
+* Hit Detection with both Goals and the puck, You can now Score!
+* Added arrows to shows where the controlled plr is if the plr is offscreen
+* Changed to using TIGCC v0.95 Beta 1 instead of TIGCC v0.94 Beta 22
+* Started Computer A.I.
+
+September 27 -
+* Converted the majority of the graphics for the rink :)
+Before this, the rink gfx were just some random sprites that had nothing to do with hockey
+* When you change players, you change to the player closest to the puck now
+* Improved Hit detection in all areas
+* Improved Center_Camera() Function
+
+September 25 -
+* Added basic shooting with 2nd and passing with Diamond
+* Made puck's movement more lifelike, working with larger integers and shifting to the right by 6 
+(dividing by 64) gives better physics
+
+September 21 -
+* Got the Dynamic Camera to follow the puck in the right way
+
+September 14 -
+* Got plr artwork, and groundwork done
+
+September 7 -
+* Started Hockey!  I had tried to make a Hockey game somewhere in April, but I had just started learning 
+C and it didn't work out...
+
+FEATURES
+---------------
+
+* First non-text Hockey game ever on a Ti-Calc
+* Multidirectional Scrolling Rink
+* 31 Official NHL Teams, (each with their own Roster, Style, and Player Types), Two being All-Star Teams
+* Strong A.I.
+* Two-Player Linking Option for Exhibition and ShootOut Modes!!!
+* Grayscale
+* Two Difficulty Levels
+* Set Game Time anywhere from 1 to 15 Minutes in length
+* 4 Modes of Play (Exhibition, ShootOut, Tournament, Practice)
+* Graphics from Ice Hockey for the NES
+* Runs Fast and Smooth on HW1 and HW2 68k Calcs (14.5 fps in an Exhibition plr vs calc game)
+* Ti-89/92+/v200 Compatible
+* 4 types of Players, (Goalie, Skinny, Average, Fat), each with their own strengths/weaknesses
+* Well Commented C Source Code included
+
+FUTURE:
+---------------
+
+* Season Mode
+* Speed Increases
+* Checking/Hitting
+* Penalty System
+* More Accurate Passing
+* Have an Idea or suggestion?  Send it to phishfud@elknet.net

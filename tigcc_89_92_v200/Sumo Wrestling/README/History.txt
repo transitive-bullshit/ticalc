@@ -1,0 +1,482 @@
+==============
+HISTORY (2005)
+==============
+
+August 27 -
+* Uploaded v0.20 publically
+
+July 24 -
+* Fixed a few glitches with the TI-92+/v200 compatibility
+
+July 23 -
+* Added one more default smack talk string, cause I heard a nice burn...
+
+July 14 -
+* Edited the Storyline a bit and added some more comments to Tournament.c
+* Began another round of private beta testing at the tict forums
+
+July 13 -
+* Added the Star progression indicators, Score, cleaned up the code, edited the storyline, 
+and added Saving/Loading of Tournament save games
+* Updated the game to v0.20
+- Program Size: 63,351
+
+July 12 -
+* Added opponents and the storyline to Tournament Mode
+
+July 11 -
+* Continued work on the Tournament Mode; added the display of the walkway and corresponding 
+parallax scrolling tiles, along with the outline of the basic tournament body
+
+July 10 -
+* Began work on the Tournament Mode
+
+July 1 -
+* Released v0.12, which was featured at www.ticalc.org
+
+May 15 -
+* Fixed a bug which prohibited deleting wrestlers
+* Updated the game to v0.12
+
+May 14 -
+* Released the game for the first time publically at www.ticalc.org (v0.11)
+
+April 24 -
+* Fixed a bug involving the sprite Star4 and its mask being at an odd address, reported by 
+Kevin Kofler
+
+April 18 -
+* Disabled the 'Tournament Mode' option (currently under development hiatus)
+* Removed the Gallery function associated with the old Tournament filler
+
+March 7 -
+* Removed OPTIMIZE_ROM_CALLS for a size/speed optimization
+- Program Size: 60,177
+
+February 18 -
+* Slowed down the key repetition rate a bit
+
+February 17 -
+* Fixed another bug with the Exit Match confirmation screen and Linkplay
+* Added key repetition in all menues (requested by tester mhubi)
+* Updated the game to v0.11
+- Program Size: 60,375
+
+February 16 -
+* Fixed a few bugs/glitches with the new Exit Match confirmation screen
+* Fixed a glitch in Linkplay, where pressing Enter to skip the Introductions resulted in 
+both wrestlers getting 'stuck' temporarily
+* Fixed a bug where the F3 Teacher Key was misinterpreted as the Enter Key on the v200
+* Fixed a few errors in the ReadMe
+(all bugs/errors reported by private beta testers:  see ReadMe credits)
+
+February 15 -
+* Fixed a few bugs/glitches
+* Added an Exit Match confirmation screen and debugged it to be compatible with linkplay
+* Fixed a newly introduced bug which disallowed the user from saving external wrestlers 
+properly
+
+February 13 -
+* Set Sumo Wrestling to Version 0.10 and began private beta testing
+* More size optimizations
+- Program Size: 60,011
+
+February 9 -
+* Fixed a few glitches
+* Switched to using F-Line ROM calls to shave off 780 bytes
+- Program Size: 60,649
+
+February 7 -
+* Fixed a few recently introduced glitches and bugs with the linkplay
+* Various size optimizations
+- Program Size: 61,375
+
+February 6 -
+* Added support for multiple language versions within the source (currently unused)
+* Improved the in-game key explanations
+* Converted the information text to an optimized assembly format using c_strings v1.0, a 
+small utility program written by me (shaved off 194 bytes)
+* Created animated and still screenshots for the upcoming release of Sumo Wrestling
+- Program Size: 61,541
+
+February 4 -
+* Fixed a few glitches
+
+February 3 -
+* Optimized the linkplay a bit (only two bytes need to be transferred per frame now)
+* Fixed a glitch with the reversal finish
+* Implemented different (basically random) stats for all built-in wrestlers
+Before this, all built-in wrestlers had the same stats for the most part.
+* Strengthened the difficulty of the computer AI to protect against punches
+* Finished up the ReadMe
+- Program Size: 61,425
+
+February 2 -
+* Finished up adding on a second Taunt
+* Fixed a few glitches and took out some currently unused graphics
+- Program Size: 61,335
+
+January 31 -
+* Merged the organized default Smack Talk sayings into the built-in wrestler strings
+Before this, all built-in wrestlers had the same smack talk.
+- Program Size: 61,769
+
+January 29 -
+* Finished the final Finish :)
+
+January 26 -
+* Worked on adding another finish
+* Added a secret wavy effect -- looks really sharp!
+
+January 24 -
+* Updated to TIGCC v0.96 Pre-Beta 1
+
+January 23 -
+* Worked on ReadMe file
+* Worked on adding another, completely new finish
+
+January 22 -
+* Fixed a problem with wrestlers Charging during Linkplay
+* Began work on a ReadMe text file
+- Program Size: 59,749
+
+January 18 -
+* Worked on making the Establish_Connection() in Linkplay more stable
+
+January 16 -
+* Various Optimizations
+* Worked on making linkplay matches more stable
+* Played the first complete linkplay match successfully
+- Program Size: 59,695
+
+January 11 -
+* More work on new wrestler handling -- Linkplay matches are now handled correctly
+- Program Size: 59,525
+
+January 10 -
+* Fix a bug with the new wrestler handling
+
+==============
+HISTORY (2004)
+==============
+
+December 31 -
+* Began work again on multiplayer support by modifying the handling of wrestler moves
+
+December 6 -
+* Fixed the loading of external wrestlers
+* Fixed several glitches in the choosing/loading of external wrestlers
+- Program Size: 59,233
+
+December 5 -
+* Added customizable Smack Talk and cleaned up the external/loaded string storage format
+* Saving of External Wrestlers now works properly (Loading is still buggy)
+- Program Size: 58,895
+
+November 23 -
+* Worked on adding customizable Smack Talk to the Wrestler Editor
+
+November 21 -
+* More work on the internals of the Wrestler Editor
+
+November 20 -
+* Worked on the Wrestler Editor
+- Program Size: 55,625
+
+November 17 -
+* Began work on the Wrestler Editor
+
+November 14 -
+* Fixed a glitch where the clock ran during the rituals before a match
+
+November 13 -
+* Added support for Loading Wrestlers from External files or from the other calc in Linkplay
+* Fixed many structural/storage bugs/glitches with the Loading of wrestlers
+* All wrestler stats and strings are now exchanged at the beginning of a Linkplay match
+- Program Size: 54,995
+
+November 10 -
+* Continued work on Linkplay
+
+November 9 -
+* Began working on Linkplay (Establish_Connection, Align_Calc, etc)
+
+November 8 -
+* Made minor timing/structural changes to the Post Match summary screen
+- Program Size: 52,391
+
+November 7 -
+* Worked on the majority of the Post Match summary screen
+- Program Size: 52,387
+
+November 6 -
+* Modified the clock so that the Count down/up works properly depending on the user's 
+Time Limit preference
+
+October 28 -
+* Worked on the Post_Match summary screen (converted gfx and started coding)
+* Added a message in the Options menu indicating to the user the ability to use Left/Right
+to modify the various preferences
+
+October 25 -
+* Modified the speed of the wrestler's movement to match their corresponding speed 
+attribute
+* Fixed a bug where the PummelLift Finish would be much more likely to Finish than it 
+should be
+* Fixed a glitch in the menues with the ESC button being passed on between the Wrestler 
+Selection screens
+
+October 19 -
+* Added 8 more official Japanese Sumo Wrestlers
+
+October 18 -
+* Tweaked the AI to have more random pummellifts
+* Fixed a glitch in the HUD where the Health bars wouldn't drop down properly
+* Added the AI Taunt (which replenishes Health)
+
+October 16 -
+* Worked on and added functionality to the computer AI
+* Played the first Plr vs Calc match where the Calc fought back -- I lost :)
+* Created and greatly tweaked the Reversal and Finish functions
+* Added Health deductions to all of the moves
+* Began modifying Excitebike's Editor.c to create a Wrestler Editor
+* Added a modified Get_Input routine from Excitebike
+- Program Size: 48,559
+
+October 15 -
+* Began work on a basic AI format and added the AI Difficulty levels
+
+October 13 -
+* Optimized the Dissolve function
+* Fixed a glitch where the ST_helpMsg would not be displayed after exiting the game
+- Program Size: 46,497
+
+October 10 -
+* Solved the problem of referencing/editing both the default and external characters by 
+creating a buffer to hold them at the game's initialization
+
+October 8 -
+* Added a game mode menu for the Exhibition matches and improved the menu's hierarchy 
+system
+
+October 4 -
+* Fixed an insidious bug which plagued the program's development for over a month, dealing 
+with the global register used by OPTIMIZE_ROM_CALLS being defined after the tigcclib 
+function definitions
+-- Much thanks to Kevin Kofler!
+
+October 1 -
+* Fixed several glitches and improved 92+/v200 compatibility
+
+August 23 -
+* Added the High Scores and support for saving/loading the user's configuration settings in 
+an external file
+
+August 22 -
+* Added the Salt Ritual
+
+August 21 -
+* Fixed a bug with the Random wrestler selection
+* Worked on menues
+
+August 20 -
+* Added a scrolling Information screen and an Options menu
+
+August 19 -
+* Worked on menues and added the Enter and Teacher keys to KeyScan()
+- Program Size: 42,865
+
+August 18 -
+* Added a basic Menu (modified slightly from ExciteBike 68k)
+* Added 92+/v200 centering compatibility in the Interface
+
+August 16 -
+* Various size optimizations
+
+August 12 -
+* Created a small DOS utility prog which will easily convert an array of C strings into 
+their optimized assembly format (large default string arrays in Sumo Wrestling are stored 
+in this format, as well as strings in Ice Hockey 68k and Excitebike 68k)
+
+August 11 -
+* Added another finish
+* Worked on the Wrestler selection screen
+
+August 10 -
+* Added compatibility to the EarthQuake screen effect on the 92+/v200 sized screens
+* Added three more finishes
+* Now the crowd will animate faster after a finish move, simulating excitement/clapping
+* Began work on a Wrestler selection screen
+- Program Size: 42,029
+
+August 9 -
+* Disabled TIGCC double-buffering for 5 fps speed increase
+* The Ring will no longer be drawn every frame, isntead the ExtGraph SpriteX8_Get function 
+will copy the area behind the wrestler's sprites and BLIT it back over them after each 
+frame, updating the Ring only when necessary (Huge speed increase ~20 fps!)
+* Added customizable game speed (due to the game's 25 fps speed increase)
+* Added an EarthQuake, screen-bouncing effect when a wrestler is slammed into the Ring
+* Updated to the (unofficial) TIGCC v0.95 Beta 16, which fixed a bunch of bugs in the new 
+constant merging code
+- Program Size: 40,933
+
+August 8 -
+* Finialized a Match Finisher move format
+* Added 5 finishes
+* Shaved ~258 bytes off optimizing
+- Program Size: 40,565
+
+August 7 -
+* Shaved off ~900 bytes just by adding several compiler switches (suggested by Lionel 
+Debroux)
+* Fixed the Tumbling graphics and added support for vertically mirrored sprites, as well 
+as sprites which are mirrors of mirrors (etc) of sprites
+* Fixed a bug with the Shove Reversal code
+- Program Size: 40,081
+
+August 5 -
+* Much work on the prematch screen (added Stats bars and greatly tweaked text message 
+system)
+
+August 4 -
+* Converted the Character strings to use an optimized assembly storage format
+* Created and added functionality to the Textbox
+- Program Size: 39,089
+
+August 3 -
+* Made a standard Character format and began a list of one-liners to be used for the 
+prematch Smack Talk
+
+August 2 -
+* Converted to the new _KeyCheck system which shaves off ~1100 bytes as well as being 
+faster, more efficient, and allowing for the detection of a keypress being pressed on its 
+first frame or being held down (this allows for the user having to smash buttons instead 
+of just holding them down and makes the game harder)
+* Began working on Finishes
+- Program Size: 37,719
+
+August 1 -
+* Worked on implementing a faster/smaller _KeyCheck system
+
+July 31 -
+* More work on the prematch game screen
+* Added a standard format for Reversals
+* Added the Blood/Sweat gfx when one wrestler stops the other's move
+- Program Size: 38,091 bytes
+
+July 30 -
+* Fixed a large structural problem, where the 2nd wrestler's moves (currently only the AI) 
+weren't interpreted and handled properly
+* Started work on a prematch game screen where both wrestlers, their stats, as well as 
+trash talk will be displayed
+* Added the Throw Reversal
+
+July 27 -
+* Added the wobbling on the Edge of the Ring code for throws and shoves
+* Updated and added functionality to the external gfx file creator
+
+July 26 -
+* Added the Spinn code where the wrestlers will spinn away from each other after a 
+collision where both wrestlers were charging or punching each other
+* Optimized several spots for size
+* Now, when Charging, a wrestler will push into its opponent before going to the Pummel 
+position
+* Changed the Throwing code to allow for the thrower to move after throwing the opponent, 
+but before the opponent is done hopping
+* Added an easy way to take off or add Health onto a wrestler's power meter; the health 
+bars now power-up at the beginning of each match
+* Updated to TIGCC v0.95 Beta 14
+- Program Size: 34,237 bytes
+
+July 25 -
+* Modified the Ring Tile code such that the Audience may be turned on or be black 
+instead
+* Fixed a glitch in the kneeling ritual start code
+
+July 24 -
+* Optimized the Audience creation code by over 300 bytes!
+* Fixed a month-old memory corruption bug where several pointers weren't initialized 
+correctly when Initializing the game
+* Animated, random Audience now works correctly
+- Program Size: 33,739 bytes
+
+July 23 -
+* Converted the animated Audience sprites and began to implement them into the engine
+A new Audience will be calculated at the start of each Match to provide somewhat of a 
+variety
+
+July 22 -
+* Formatted the camera such that it will try to keep the wrestlers centered in the ring
+* Fixed a memory corruption bug
+
+July 19 -
+* Added the Taunt
+* Removed the fast string drawing routines since the extra speed wasn't really needed
+* Added a Pause screen
+- Program Size: 30,667 bytes
+
+June 30 -
+* Added the Shove from the Pummel position
+* Fixed many of the sprite offsets, so the sprites will be displayed at the corrrect
+coordinates
+* Added a blood/sweat graphic when a wrestler gets punched
+
+June 29 -
+* Added a the Lift from the Pummel position
+* Now the mirrored sprites are shifted to the left at the beginning such that there won't 
+be any white columns of pixels on the left of the sprite as there are on the right of the 
+non-mirrored sprites (makes it easier to display the mirrored sprites at the proper 
+horizontal coordinate)
+* Wrestlers will now reel backwards when punched
+
+June 28 -
+* Added the Throw/Toss from the Pummel position
+
+June 27 -
+* Began adding support for the Pummeling moves/gfx which are mixed into one large sprite 
+instead of two individual medium-sized sprites
+
+June 22 -
+* Added the charging code and worked on the wrestler attributes
+
+June 21 -
+* Reformatted the way sprites are stored
+
+June 19 -
+* Completed the Kneeling ritual introduction and the base of the Salt throwing code
+* Began to implement the main gameplay structure such as reading keypresses and the 
+wrestler code associated with them
+
+June 18 -
+* Switched to calculating all masks at runtime to cut down on program size
+* Completed the Stomping code, the first of three ritual introductions
+
+June 17 -
+* Began to setup the basic gameplay process
+
+June 13 -
+* Switched to using ExtGraph v2.00 Beta 3 which fixed the buggy SpriteX8 routines
+* Various size optimizations
+
+June 9 -
+* Got the tilemap to display and scroll the ring properly
+
+June 8 -
+* Converted the majority of the Ring graphics and set up their mirror initializations
+* Began setting up the TileMap Engine (basically the same one used in Ice Hockey 68k)
+
+June 5 -
+* Reconverted some of the graphics to a different format since the original was buggy
+* Added and refined the mirroring of sprites at runtime to cut down on the program's 
+size
+
+May 30 -
+* Converted the majority of the Wrestler graphics
+
+May 29 -
+* Began formatting and organizing the graphics
+* Started planning how the sprites will be stored/called
+
+May 22 -
+* Started the Sumo Wrestling project!
+* Began extracting graphics from the NES game 'Sumo Wrestling' (originally Japanese)

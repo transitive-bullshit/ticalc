@@ -1,0 +1,25 @@
+22/3/03
+Connect 4 V 1.0
+By Travis Fischer
+
+This game is pretty self-explanatory.  There is info in the game.  Basically, it is a grayscale Connect 4.  If you haven't ever played Connect 4, all you have to do is take turns with an opponent, dropping different colored pieces down slots.  The first one to get four in a row of their color wins.
+
+This is my second game in C, and I am very open to suggestions.  If you have comments or find any bugs,
+
+E-mail:
+
+fischtra2@yahoo.co.uk
+
+This game is not almost done.  In the future, I wish to have a computer ai and a link system, but I'm just learning so those things will have to wait.
+
+I am now working on a sort of twist to the regular connect 4 in which you can drop pieces from the top falling down, from the right, from the left, and from the bottom, falling up.  I've already made it in basic, but it's going to be a lot better in C.
+
+The source code is enclosed for anyone who wants to learn.  I have comments in there every so often and hope they will be useful to someone.
+
+Thanks to:
+everyone who helped make TIGCC
+& Thomas Naussambauer
+
+
+
+:)

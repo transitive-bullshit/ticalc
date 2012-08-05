@@ -1,0 +1,367 @@
+<html>
+<head>
+<title>Ice Hockey 68k v2.71</title>
+</head>
+
+<body link="#FFFFFF" vlink="#FFFFFF" alink="#FFFFFF" text="#FFFFFF" bgcolor="#000000" body background="Background.jpg">
+<style type="text/css">
+body {
+scrollbar-arrow-color: #666666;
+scrollbar-base-color: #ffcc00;
+scrollbar-dark-shadow-color: #ffcc00;
+scrollbar-track-color: #ffcc66;
+}
+</style>
+<font face="Arial" >
+<center>
+
+<img src = "Image1.gif"><br><br>
+
+/* ------------------------ *\<br>
+<font face="Treasure" >
+<font color="#ffcc00">
+By Fisch<br>
+<font face="Arial" >
+<font color="#fffff">
+(Travis Fischer)<br>
+<br>
+fisch0920@yahoo.com<br>
+/* ------------------------ *\<br>
+Original Release Date: October 23, 2003<br>
+Current Release Date: December 31, 2005<br>
+<br>
+<font color="#ffcc00">
+<strong>OVERVIEW</strong>:<br>
+<font color="#fffff">
+0) Updating Notes<br>
+1) Introduction<br>
+2) Requirements<br>
+3) Instructions<br>
+4) Hints and Help<br>
+5) Features<br>
+6) Credits<br>
+7) Disclaimer<br>
+<br>
+<br>
+================<br>
+<font color="#ffcc00">
+UPDATING NOTES<br>
+<font color="#ffffff">
+================<br>
+<br>
+If you are updating from a previous version of Ice Hockey (below v2.70):<br>
+<br>
+1) There is no longer a need for the external graphics file 'hockgfx'.  If it is still <br>
+located on your calculator, you may delete it.  All data which used to be located in this <br>
+file has been moved back into the main program as a result of 15kb worth of optimizations!<br>
+<br>
+2) Linkplay in this version has been heavily optimized/updated, so it is incompatible with <br>
+the linkplay of previous versions.  Before playing multiplayer, first make sure that both <br>
+calcs have the same version of Ice Hockey (at least v2.71).  Linkplay in v2.71 should be <br>
+more efficient and stable.<br>
+<br>
+3) Any configuration settings you had saved in an older version of Ice Hockey will be erased, <br>
+but it is very easy to reset them.  Edited, external teams from previous versions will work <br>
+fine with any version of Ice Hockey.<br>
+<br>
+=============<br>
+<font color="#ffcc00">
+INTRODUCTION<br>
+<font color="#ffffff">
+=============<br>
+<br>
+I've always loved the game of Hockey and thought it would be fun to make a game of it.  This <br>
+game was entirely created with TIGCC and needs approximately 85,000 bytes of available RAM <br>
+for the game to run.  This program was designed with the Ti-89, Ti-92+ and v200 in mind and <br>
+the same program should run on all three calculators.  To run the game on a Ti-89 Titanium, <br>
+you must send the appropriate version, located in a separate folder marked 'Ti-89 Titanium'.<br>
+This is a 3v3 Hockey game with no penalties.  If needed, key information is provided in the <br>
+game itself from the main menu's Info option.  Have fun with this game :)<br>
+<br>
+<br>
+==============<br>
+<font color="#ffcc00">
+REQUIREMENTS<br>
+<font color="#ffffff">
+==============<br>
+<br>
+1) Send the two hockey files to your calculator<br>
+	* The file 'hockey' is the program launcher<br>
+	* The file 'hoekcyzip' contains the compressed game code which is run by hockey()<br>
+2) Type hockey() in the Home entry line<br>
+3) Press ENTER to run the game<br>
+4) There will be a very short pause while the game is decompressing.  This is normal and <br>
+should last one to two seconds.<br>
+<br>
+Compatibility Notes:<br>
+<br>
+*Ice Hockey 68k needs about 80,000 bytes of free RAM to run.  To free up memory, you may<br> 
+have to archive some files.  Go to the Var-Link menu (2nd -), choose a file (or more than <br>
+one, using F4), then press F1 to open the Manage menu and press 8, 'Archive Variable' to <br>
+archive files.<br>
+<br>
+* Sumo Wrestling should be compatible with all AMS versions 1.01 and greater, including <br>
+the Titanium 3.00.  It should also run fine on PedroM.<br>
+<br>
+* The program is designed to detect which type of calculator it is being run on, so the same <br>
+program will run on a Ti-89, TI-89 Titanium, TI-92+, or on a v200.  One of the files should <br>
+have a .z extension (ASM extension on calc) and the other should have a .y (ppg extension on <br>
+calc).<br>
+<br>
+<br>
+=============<br>
+<font color="#ffcc00">
+INSTRUCTIONS<br>
+<font color="#ffffff">
+=============<br>
+<br>
+<font color="#ffcc00">
+General:<br>
+<font color="#ffffff">
+--------<br>
+<br>
+During the game, the player that you control will have a hand pointing at it.  The Player who has <br>
+control of the puck will have a large circle surrounding the Player.  Games are 3v3 with one <br>
+Goalie on each team.  Each team is either in the Western of Eastern conference.  These are the <br>
+real NHL's teams and Rosters.  Each team also has a type of formation.  With some practice, <br>
+you should find which formations do well against others and which do not.  Each team then has <br>
+three Players located at the top of the screen.  The first Player will always be a goalie.  There <br>
+are then three other types of players, each with their own unique strengths and weaknesses.  <br>
+<br>
+<font color="#ffcc00">
+Player Types:<br>
+<font color="#ffffff">
+-------------<br>
+<br>
+1) Goalie     - Goalies will always stay in front of their goal and react to the action <br>
+rather than taking part in it.  The Goalie's attributes are the same as an Average Plr.<br>
+<br>
+2) Fat        - This Players are slow and will easily be outskated by skinnier players.  <br>
+However, they have a very hard shot and have a higher chance at winning the puck in a <br>
+scramble.  I have found that the Fat Players are harder to play with, so if you get pretty <br>
+good at Hockey, try playing with the Fat guys on Hard Difficulty.<br>
+<br>
+3) Average    - This Player is an average of the Fat and Skinny Players.  Average Players <br>
+have no strengths and that is their weakness.<br>
+<br>
+4) Skinny     - These Players are very fast skaters, but have a softer shot.  They are also <br>
+less likely to win the puck in a scramble.<br>
+<br>
+<font color="#ffcc00">
+There are four main Modes of Play:<br>
+<font color="#ffffff">
+-----------------------------------<br>
+<br>
+1) Exhibition - Hone your skills against a computer opponent or a friend in a single game.  <br>
+Choosing the Calc vs Calc option will allow you to watch the Computer A.I. play itself.<br>
+<br>
+2) Tournament - Battle your way to the top of an eight team tournament.  To win, you must <br>
+beat three computer teams successively.<br>
+<br>
+3) ShootOut   - Practice against the computer or a friend in a Five-Round 1 on 1 Shootout.  <br>
+In a ShootOut, you have Five seconds to score.  If the score is tied after five rounds of <br>
+alternating shots, the ShootOut will go into Sudden Death!<br>
+Choosing the Calc vs Calc option will allow you to watch the Computer A.I. play itself.<br>
+<br>
+4) Practice   - Make up plays or just skate around and face no opposition.<br>
+<br>
+<font color="#ffcc00">
+Ti-89 Keys:<br>
+<font color="#ffffff">
+------------<br>
+2nd			Shoots<br>
+Shift			Passes<br>
+Diamond*			Changes Plrs on defense<br>
+APPS			Pauses the game<br>
+ESC			Quits the game<br>
+F5			Teacher Key, Quits the game Fast<br>
+<br>
+<font color="#ffcc00">
+Ti-92+ Keys:<br>
+<font color="#fffff">
+--------------<br>
+F1			Shoots<br>
+F5			Passes<br>
+F2*			Changes Plrs on defense<br>
+APPS			Pauses the game<br>
+ESC			Quits the game<br>
+F4			Teacher Key, Quits the game Fast<br>
+<br>
+<font color="#ffcc00">
+Ti-v200 Keys:<br>
+<font color="#ffffff">
+--------------<br>
+HAND			Shoots<br>
+F1			Passes<br>
+Q*			Changes Plrs on defense<br>
+APPS			Pauses the game<br>
+ESC			Quits the game<br>
+F3			Teacher Key, Quits the game Fast<br>
+<br>
+*Diamond on the Ti-89, F2 on the Ti-92+, and Q on the Ti-v200 will automatically change <br>
+control to the closest Plr to the Puck on defense.  If you double tap the change key, <br>
+control will go to your Goalie.<br>
+<br>
+Hockey allows for the user to redefine the game's key layout in the Options Menu.<br>
+<br>
+<font color="#ffcc00">
+Two Player Info<br>
+<font color="#ffffff">
+----------------<br>
+<br>
+A Multiplayer option is available in the Exhibition and ShootOut Modes.  Make sure that <br>
+both Calcs have the Hockey Files and that the Link cable is connected firmly into both <br>
+Calcs and then choose the 'two player' option in either the Exhibition or ShootOut Menu.  <br>
+The Calculator which Joins the game first will become the Host, which, unless you are <br>
+interested in the source, really doesn't matter.  Multiplayer games have been extensively <br>
+tested, but there is no way to ensure a 100% connection rate.  There is a noticeable <br>
+speed difference in the multiplayer games because of the large amounts of data that need <br>
+to be transferred through the link each frame.  If there is a Link Error, just try again; <br>
+however, this has never happened in my tests so the link functions should be working <br>
+pretty well.  It is Very fun to play Hockey with a friend!<br>
+<br>
+Note:  Ice Hockey 68k v2.70 (and above)'s Link code is incompatible with previous versions <br>
+(changes were made to make the linkplay more optimized and stable)<br>
+<br>
+Note:  Currently, there is no check to make sure that both calcs have the same hockteam <br>
+file, so playing multiplayer with a customized team will not work as expected.  To play <br>
+multiplayer with customized teams, make sure that both calculators have the same <br>
+hockteam file.<br>
+<br>
+<br>
+==============<br>
+<font color="#ffcc00">
+HINTS and HELP<br>
+<font color="#ffffff">
+==============<br>
+<br>
+If you find Anything wrong with the game, you know a way to improve Hockey, or you are just <br>
+lonely, your e-mail is very welcome.  Please, no Spam or Junk e-mails.  If you would like <br>
+to reuse a major portion of the source, please contact me first.<br>
+<br>
+<font color="#ffcc00">
+Hints:<br>
+<font color="#ffffff">
+-----<br>
+<br>
+1) Winning the Faceoffs is critical to winning the game.  Try out each of the (3) formations <br>
+to see which one you do the best with.  I find that it is easier to, instead of heading <br>
+straight for the puck, skate back a bit and then take the puck from whoever wins it in the <br>
+scramble.<br>
+<br>
+2) Practice and come up with different ways to score.  One sweet way to score is to skate <br>
+all of the way around the other player's goal and come out on the other side to school the <br>
+goalie big time!<br>
+<br>
+3) On defense, if your player is behind the other team's player who controls the puck, <br>
+unless they are a skinny player, the chances of them catching up are slim.  Following <br>
+behind a player does nothing, so try to move your current player away from the puck so <br>
+your goalie will be the closest player to the puck.  On Hard Difficulty, the Computer <br>
+Players will score on your computer goalie an average of 8/10 times by aiming for the <br>
+corners of the net, so taking control of your goalie to prevent a computer's <br>
+'smart shot' is a must.<br>
+<br>
+4) Find unique ways to school players on the other team.  Maybe cut back and then skate <br>
+on an angle away from a defensive player.  It's pretty sweet to play multiplayer and <br>
+leave your friend in the dust.<br>
+<br>
+5) In ShootOuts against the Computer, I find it is easier to bring out your goalie fast, <br>
+before the Computer player has the chance to get off a shot.<br>
+<br>
+6) The farther away you are when you pass the puck, the less accurate your pass will be.<br>
+<br>
+<br>
+==========<br>
+<font color="#ffcc00">
+FEATURES<br>
+<font color="#ffffff">
+==========<br>
+<br>
+First non-text Hockey game ever on a Ti-Calc<br>
+Multidirectional Scrolling Rink<br>
+31 Official NHL Teams, (each with their own Roster, Style, and Player Types), Two being All-Star Teams<br>
+Strong A.I.<br>
+Two-Player Linking Option for Exhibition and ShootOut Modes!!!<br>
+Grayscale<br>
+Two Difficulty Levels<br>
+Set Game Time anywhere from 1 to 15 Minutes in length<br>
+4 Modes of Play (Exhibition, ShootOut, Tournament, Practice)<br>
+Graphics from Ice Hockey for the NES<br>
+Runs Fast and Smooth on HW1 and HW2 68k Calcs (14.5 fps in an Exhibition plr vs calc game)<br>
+Ti-89/92+/v200 Compatible<br>
+4 types of Players, (Goalie, Skinny, Average, Fat), each with their own strengths/weaknesses<br>
+Well Commented C Source Code included<br>
+Redefinition of Keys<br>
+<br>
+<br>
+========<br>
+<font color="#ffcc00">
+CREDITS<br>
+<font color="#ffffff">
+========<br>
+<br>
+This program was written by me, Travis Fischer.  Most of the graphics were ripped from <br>
+the game Ice Hockey for the NES, made by Nintendo.  There are in-game scrolling Credits <br>
+in the Info option off of the Main menu.<br>
+<br>
+I would like to thank:<br>
+---------------------<br>
+<br>
+Thomas Nussbaumer<br>
+Everyone at TICT<br>
+The Tigcc Team<br>
+Apogee Software<br>
+Nintendo<br>
+Jesystems<br>
+Open Source<br>
+Mr. Mobius<br>
+Malcolm Smith<br>
+Zeljko Juric<br>
+Kevin Kofler<br>
+Sebastian Reichelt<br>
+Greg Dietsche<br>
+Scott Noveck<br>
+Lionel Debroux<br>
+TechnoPlaza<br>
+Clawsonia<br>
+and Cisco, my Cat<br>
+*And anyone else that I forgot<br>
+<br>
+Beta Testers:<br>
+------------<br>
+Clawsonia<br>
+Deadbird<br>
+Malcolm Smith<br>
+Kevin Kofler<br>
+Stoopidguy<br>
+Adrian Bader<br>
+Digital<br>
+Jordan Krage<br>
+Lionel Debroux<br>
+Henry Barrow<br>
+Dan Barr<br>
+Jesse Frey<br>
+<br>
+<br>
+===========<br>
+<font color="#ffcc00">
+DISCLAIMER<br>
+<font color="#ffffff">
+===========<br>
+<br>
+This program may be distributed by any other organization for non-commercial use only.  You <br>
+are free to re-use any part of the sourcecode in any of your FREE projects.  I hope that this <br>
+game may help some people to learn C.  This game has been extensively tested, but in case it <br>
+causes something harmful, I am in no way Liable for what happens.  The author expresses NO <br>
+guarantees or warranties of the software and/or the data files, either expressed or implied.  <br>
+If you find any other bugs, please feel free to e-mail me at fisch0920@yahoo.com.<br>
+.<br>
+Other games programmed by Travis Fischer (available in the archives at www.ticalc.org):<br>
+* Excitebike 68k, a clone of the well-known NES Excitebike dirtbike racing game<br>
+* Sumo Wrestling, a full-featured Sumo Wrestling game, complete with everything from pre-match <br>
+smack talk, to earthquake-inducing tosses, to creating your own customized wrestlers!<br>
+
+</center>
+
+</body>
+</html>

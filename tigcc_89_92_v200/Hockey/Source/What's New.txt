@@ -1,0 +1,36 @@
+v2.75
+* Fixed an erratic bug reported by Kevin Kofler
+* Recompiled with the latested version of TIGCC
+
+v2.71
+* Bugfix with v200 Teacher Key
+
+v2.70
+* 16kb worth of optimizations, largely due to the help of Lionel Debroux
+The external graphics file is now not needed
+* Improved linkplay and keypress handling
+* Various bug/glitch fixes
+
+v2.00
+* Ti-89 Compatibility
+* A few small optimizations/fixes
+
+v1.06
+* Many Bug Fixes (some serious)
+* Easter Eggs
+* Customizable Game Speed
+* Significant Speed Boost
+
+v1.04
+* Team Editor added
+* Small Bug Fixes
+
+v1.02 (Public)
+* Small Bug Fixes
+
+v0.68 (Public)
+* Initial Public Release
+
+Previous
+* Betas tested at the TICT/TIGCC Programming Message Board found at 
+http://pub26.ezboard.com/btichessteamhq
