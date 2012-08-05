@@ -16,21 +16,21 @@ This includes a large collection of well-written / optimized TI-Basic programs (
 
 Hopefully someone out there will find them useful.
 
-<img src="http://www.ticalc.org/archives/files/ss/463/46308.gif" />
+<img src="http://www.ticalc.org/archives/files/ss/463/46308.gif" />&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="http://www.ticalc.org/archives/files/ss/463/46307.gif" />
 <br />
 <br />
 
-<img src="http://www.ticalc.org/archives/files/ss/701/70139.gif" />
+<img src="http://www.ticalc.org/archives/files/ss/701/70139.gif" />&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="http://www.ticalc.org/archives/files/ss/701/70141.gif" />
 <br />
 <br />
 
-<img src="http://www.ticalc.org/archives/files/ss/712/71205.gif" />
+<img src="http://www.ticalc.org/archives/files/ss/712/71205.gif" />&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="http://www.ticalc.org/archives/files/ss/712/71208.gif" />
 <br />
 <br />
 
-<img src="http://www.ticalc.org/archives/files/ss/402/40275.gif" />
+<img src="http://www.ticalc.org/archives/files/ss/402/40275.gif" />&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="http://www.ticalc.org/archives/files/ss/646/64626.gif" />
 
